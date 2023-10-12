@@ -1,24 +1,24 @@
-export default function FeedbackOptions({ onClickButtons }) {
+export default function Feedback({ onClickButtons }) {
   return (
     <div className="btn-wrapper">
       <button
-        className="btn btn-good"
+        className="btn"
         type="button"
-        onClick={e => onClickButtons(e.target.textContent)}
+        onClick={evt => onClickButtons(evt.target.textContent)}
       >
         Good
       </button>
       <button
-        className="btn btn-neutral"
+        className="btn"
         type="button"
-        onClick={e => onClickButtons(e.target.textContent)}
+        onClick={evt => onClickButtons(evt.target.textContent)}
       >
         Neutral
       </button>
       <button
-        className="btn btn-bad"
+        className="btn"
         type="button"
-        onClick={e => onClickButtons(e.target.textContent)}
+        onClick={evt => onClickButtons(evt.target.textContent)}
       >
         Bad
       </button>
