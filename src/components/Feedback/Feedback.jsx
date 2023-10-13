@@ -1,27 +1,16 @@
-export default function Feedback({ onClickButtons }) {
+export default function Feedback({ options, onLeaveFeedback }) {
   return (
     <div className="btn-wrapper">
-      <button
-        className="btn"
-        type="button"
-        onClick={evt => onClickButtons(evt.target.textContent)}
-      >
-        Good
-      </button>
-      <button
-        className="btn"
-        type="button"
-        onClick={evt => onClickButtons(evt.target.textContent)}
-      >
-        Neutral
-      </button>
-      <button
-        className="btn"
-        type="button"
-        onClick={evt => onClickButtons(evt.target.textContent)}
-      >
-        Bad
-      </button>
+      {options.map(btn => (
+        <button
+          key={btn}
+          onClick={() => onLeaveFeedback(btn)}
+          className="btn"
+          type="button"
+        >
+          {btn}
+        </button>
+      ))}
     </div>
   );
 }
