@@ -20,7 +20,7 @@ h2 {
 }
 
 p {
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 .wrapper {
@@ -33,7 +33,6 @@ p {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.28;
-  text-transform: uppercase;
 }
 
 .container {

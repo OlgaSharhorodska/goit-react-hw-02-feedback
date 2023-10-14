@@ -54,6 +54,7 @@ export class App extends React.Component {
     return (
       <div className="container">
         <div className="wrapper">
+          <p>Please leave feedback</p>
           <Feedback
             options={Object.keys(this.state)}
             onLeaveFeedback={this.onLeaveFeedback}
